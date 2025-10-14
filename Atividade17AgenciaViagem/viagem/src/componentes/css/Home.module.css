@@ -1,0 +1,27 @@
+.fundoHome{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.malaHome{
+    width: 45%;
+    height: 450px;
+}
+
+.textoHome{
+    margin-top: 80px;
+    width: 45%;
+    height: 450px;
+  
+    text-align: center;
+}
+
+.textoHome p{
+   font-size: 20px;
+   margin-top: 50px;
+}

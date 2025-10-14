@@ -1,0 +1,7 @@
+.fundoChina{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-image: url(../../assets/Muralha.jpg);
+    background-size: cover;
+}

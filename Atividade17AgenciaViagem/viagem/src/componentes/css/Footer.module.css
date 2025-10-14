@@ -1,0 +1,36 @@
+.fundoFooter{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 204, 74);
+    
+    
+}
+
+.fundoFooter h1{
+    
+    text-align: center;
+    
+}
+
+.fundoFooter p{
+    text-align: center;
+    
+}
+.icones{
+
+    width: 70%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icones img{
+
+    width: 90px;
+    height: auto;
+    margin: auto;
+
+}

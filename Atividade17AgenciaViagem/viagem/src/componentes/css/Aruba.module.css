@@ -1,0 +1,7 @@
+.fundoAruba{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-image: url(../../assets/Aruba.jpg);
+    background-size: cover;
+}

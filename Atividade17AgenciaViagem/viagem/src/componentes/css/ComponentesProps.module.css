@@ -1,0 +1,21 @@
+.CorpoTexto{
+
+    position: relative;
+    width: 450px;
+    height: auto;
+    background-color:rgba(255, 255, 255, 0.5);
+    color: darkblue;
+    text-align: center;
+    padding: 15px;
+    margin-left:750px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-top: 30px;
+
+}
+
+.imageProps{
+
+    width: 50px;
+
+}
