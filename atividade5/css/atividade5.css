@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 30px;
+}
+
+main{
+    position: relative;
+    width: 90%;
+    height: auto;
+    background-color: rgb(55, 0, 255);
+    margin: auto;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#cabecalho1{
+
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+
+}
+#left{
+
+    position: relative;
+    width: 20%;
+    height: 400px;
+    background-color: rgb(180, 180, 180);
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center ;
+
+}
+
+#sectionmeio{
+
+    position: relative;
+    text-align: center;
+    width: 60%;
+    height: 380px;
+    background-color: blueviolet;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 16px;
+    padding: 10px;
+    
+
+}
+
+#cabecalho2{
+
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    margin-top: 5px;  
+    
+}
+
+#divtop{
+
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-color: rgb(104, 66, 9);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;  
+
+}
+
+#sectionmeio p{
+
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(236, 167, 238);
+    text-align: left;
+    margin-top: 5px;
+
+}
+
+#section2 {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between ;
+    gap:10px;
+
+}
+
+
+#divleft{
+
+    position: relative;
+    width: 35%;
+    height: 60px;
+    background-color: rgb(65, 64, 64);
+    margin-top: 5px;
+    
+    }
+
+#divcenter{
+
+    position: relative;
+    width: 35%;
+    height: 60px;
+    background-color: rgb(65, 64, 64);
+    margin-top: 5px;
+   
+}
+
+#divright{
+
+    position: relative;
+    width: 35%;
+    height: 60px;
+    background-color: rgb(65, 64, 64);
+    margin-top: 5px;
+   
+}
+
+aside{
+
+    position:auto;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(168, 0, 126);
+    text-align: center;   
+
+}
+
+footer{
+
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    clear: left;
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center ;
+}

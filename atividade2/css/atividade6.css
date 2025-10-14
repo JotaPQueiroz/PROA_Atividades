@@ -1,0 +1,127 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+main{
+
+    position: relative;
+    width: 90%;
+    height: 600px;
+    background-color: rgb(65, 54, 218);
+    margin: auto;
+    font-size: 16px;
+    color: rgb(43, 42, 42);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+    
+    
+
+}
+
+#cabecalho {
+
+    position: relative;
+    text-align: center;
+    margin-top: auto;
+    padding: 30px;
+    background-color: rgb(14, 255, 6);
+
+}
+
+
+
+
+#sectionleft{
+
+    position: relative;
+    width: 30%;
+    height: 450px;
+    background-color: rgb(49, 231, 255);
+    text-align: left;
+    float: left;
+
+
+}
+
+nav {
+
+    position: relative;
+    width: 90%;
+    height: 200px;  
+    margin: 10px;
+    background-color: rgb(250, 252, 174);
+    text-align: left;
+
+}
+aside{
+
+    position: relative;
+    width: 90%;
+    height: 200px;
+    margin: 10px;
+    background-color: rgb(250, 252, 174);
+
+}
+
+#sectionright {
+
+    position: relative;
+    width: 860px;
+    height: 75%;
+    background-color: rgb(95, 21, 163);
+    text-align: left;
+    margin-left: 30%;
+    
+}
+
+article{
+
+    position: relative;
+    width: 95%;
+    height: 96%;  
+    background-color: rgb(255, 201, 201);
+    margin-left:  3%;
+
+}
+
+#subtitulo{
+    position: relative;
+    background-color: aquamarine;
+    text-align: center;
+
+}
+
+p{
+    margin-top: 10px;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(206, 77, 88);
+    text-align: left;
+}
+
+div{
+
+    margin-top: 10px;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(215, 136, 252);
+    text-align: left;
+
+}
+
+footer{
+
+    height: 60px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(39, 23, 10);
+    text-align: left;
+    color: white;
+}

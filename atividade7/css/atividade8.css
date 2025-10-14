@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    position: relative;
+    background-color: aqua;
+    width: 90%;
+    height: 920px;
+    margin: auto;
+     
+}
+
+#cabecalho{
+
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 80px;
+    margin-right: 20px;
+    
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+    padding: 60px;
+    font-size: 60px;
+
+}
+
+#menu1{
+
+    position: relative;
+    background-color: rgb(15, 7, 126);
+    width: 100%;
+    height: 20px;
+    margin: auto;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-direction: row;
+    
+
+}
+
+#html{
+    
+    position: relative;
+    background-color: red;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+
+
+
+}
+
+#css{
+
+   position: relative;
+    background-color: red;
+    width: 100px;
+    height: 100%;
+   
+    text-align: center;
+    align-items: center; 
+
+}
+
+#js{
+
+    position: relative;
+    background-color: red;
+    width: 100px;
+    height: 100%;
+    
+    text-align: center;
+    align-items: center;
+
+}
+
+#jquery{
+
+    position: relative;
+    background-color: red;
+    width: 100px;
+    height: 100%;
+    
+    text-align: center;
+    align-items: center;
+
+}
+
+#anim{
+
+    position: relative;
+    background-color: red;
+    width: 100px;
+    height: 100%;
+    
+    text-align: center;
+    align-items: center;
+
+}
+
+#form{
+
+    position: relative;
+    background-color: red;
+    width: 100px;
+    height: 100%;
+    
+    text-align: center;
+    align-items: center;
+
+}
+
+#menu2{
+
+    position: relative;
+    background-color: rgb(15, 7, 126);
+    width: 10%;
+    height: 700px;
+
+    
+    color: antiquewhite;
+    display: flex;
+    justify-content: left;
+    gap: 1px;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    float: left;
+    
+
+}
+
+.links{
+
+    position: relative;
+    background-color: rgb(126, 7, 7);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    
+
+}
+
+#conteudo{
+
+    position: relative;
+    background-color: rgb(211, 233, 208);
+    width: 800px;
+    height: 700px;
+    display: flex;
+    
+    font-size: 50px;
+    float: left;
+    text-align: center;
+    
+    flex-direction: column;
+}
+
+#tablet{
+
+    position: relative;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+
+}
+
+p{
+
+    position: relative;
+    background-color: aquamarine;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    
+    font-size: 25px;
+    
+    height: 120px;
+
+}
+
+#position{
+
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 95%;
+
+}
+
+#asfalto{
+
+    position: relative;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 5%;
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    
+
+}
+#luamar {
+
+    position: relative;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 5%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+
+}
+
+#sol{
+
+    position: relative;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 5%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+aside{
+
+    position: relative;
+    width: 290px;
+    height: 700px;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    
+
+}
+
+

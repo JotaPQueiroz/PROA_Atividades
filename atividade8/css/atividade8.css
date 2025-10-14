@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+main {
+
+    position: relative;
+    background-color: rgb(243, 61, 61);
+    width: 90%;
+    height: 2370px;
+    margin-left: 5%;
+
+
+}
+
+header {
+    background-image: url(../images/guitarras_header.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 200px;
+   
+
+}
+
+nav {
+
+    background-color: rgb(252, 252, 252);
+    justify-content: space-around;
+    display: flex;
+    width: 50%;
+    height: 30px;
+    float: right;
+    margin-top: 10%;
+
+}
+
+nav p {
+    margin-top: 5px;
+    font-size: 13px;
+     cursor: pointer;
+
+}
+
+#rosa {
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+
+
+
+}
+
+.redbox {
+    position: relative;
+    background-color: rgb(250, 106, 106);
+    width: 90%;
+    height: 70%;
+    margin: 2%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    color: antiquewhite;
+
+
+
+}
+.redbox h4 {
+    margin-top: 10%;
+    width: 90%;
+   
+}
+
+.redbox p {
+    margin-top: 5%;
+    width: 90%;
+    font-size: 15px;
+    
+}
+
+#lojaimg{
+    width: 100%;
+    height: 350px;
+   
+}
+
+
+#azul {
+
+    background-color: rgb(121, 215, 252);
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.branca {
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 40%;
+    height: 90%;
+    margin: 2%; 
+    border-radius: 3%;
+    flex-direction: column;
+    text-align: center;
+}
+.branca img{
+    margin-top: 30%;
+    width: 100%;
+    
+}
+.branca h2{
+
+    color: red;
+    
+}
+
+#laranja {
+
+    position: relative;
+    background-color: rgb(173, 43, 4);
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+
+}
+#maps{
+    width: 100%;
+    height: 100%;
+}
+
+#fundobranco {
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    display: flex;
+
+
+}
+
+
+#azulescuro {
+
+    position: relative;
+    background-color: rgb(8, 0, 85);
+    width: 50%;
+    height: 85%;
+    margin: 2%;
+
+}
+#azulescuro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+#azulescuro form{
+    width: 50%;
+    padding: 20px 40px 10px 40px;
+}
+
+#azulescuro form input{
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+}
+
+#azulescuro form textarea{
+    width: 60%;
+    height: 150px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#redesociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: #04018e;
+}
+
+#redesociais h2{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#redesociais nav{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#redesociais nav a{
+    width: 32%;
+}
+
+#redesociais nav a img{
+    width: 100%;
+}
+footer {
+
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
+}
+
+
+footer nav{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    background-color: black;
+}
+
+footer nav a{
+    width: 20%;
+    
+}
+
+footer nav a img{
+    width: 100%;
+    
+}
