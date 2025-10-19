@@ -1,0 +1,22 @@
+header{
+    background-image: url(../images/guitarras_header.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+nav{
+    background-color: #fff;
+    height: 50px;
+    width: 50%;
+    font-size:small;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    color: brown;
+}
+
