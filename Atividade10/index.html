@@ -3,59 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
+    <title>Netflix Brasil</title>
+    <link rel="icon" type="image/png" href="./images/iconeNetflix.png">
     <link rel="stylesheet" href="./css/atividade10.css" type="text/css">
-    </head>
-<body>
-    <header class="navbar">
-        <div class="logo">
-            NETFLIX
-        </div>
-        <nav class="nav-links">
-            <a href="#">Início</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            </nav>
-        <div class="nav-icons">
-            <button>Busca</button>
-            <button>Perfil</button>
-        </div>
-    </header>
+    
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <section class="hero">
+<body>
+    <main>
+    <div class="hero">
+        <div class="hero-bg"></div>
+
+        <header class="header">
+            <img class="logo" src="./images/LogoNetflix.png" alt="Logo Netflix">
+            <div class="header-actions">
+                <select name="language" class="lang-select">
+                    <option value="pt-br">Português</option>
+                    <option value="en">English</option>
+                </select>
+                <a href="#" class="btn btn-primary">Entrar</a>
+            </div>
+        </header>
+
         <div class="hero-content">
-            <h1>Nome do Filme em Destaque</h1>
-            <p>Uma breve descrição do conteúdo.</p>
-            <div class="hero-buttons">
-                <button class="btn-play">▶ Reproduzir</button>
-                <button class="btn-info">ℹ Mais Informações</button>
+            <h1>Filmes, séries e muito mais. Sem limites.</h1>
+            <p class="subtitle">A partir de R$ 20,90. Cancele quando quiser.</p>
+            
+            <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            
+            <form class="email-form">
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn btn-cta">
+                    Vamos lá >
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="promo-strip">
+        <div class="promo-content">
+            <p>A Netflix que você adora por apenas R$ 20,90.</p>
+            <p class="small-text">Assine o plano com anúncios e poupe dinheiro. Saiba mais.</p>
+        </div>
+        <a href="#" class="btn btn-info">Saiba mais</a>
+    </div>
+
+    <section class="content-section">
+        <h2>Em alta</h2>
+        <div class="carousel">
+            
+            <div class="cards">
+                <div class="rank-number">1</div>
+                <div id="fundo1"></div>
+                <p>Naruto Shippuden</p>
+            </div>
+            <div class="cards">
+                <div class="rank-number">2</div>
+                <div id="fundo2"></div>
+                <p>Caramelo</p>
+            </div>
+            <div class="cards">
+                <div class="rank-number">3</div>
+                <div id="fundo3"></div>
+                <p>Wandinha</p>
+            </div>
+            <div class="cards">
+                <div class="rank-number">4</div>
+                <div id="fundo4"></div>
+                <p>Monstro</p>
+            </div>
+            <div class="cards">
+                <div class="rank-number">5</div>
+                <div id="fundo5"></div>
+                <p>Stranger Things</p>
+                
             </div>
         </div>
     </section>
 
-    <main class="content-rows">
-        <div class="row">
-            <h2>Populares na Netflix</h2>
-            <div class="card-list">
-                <div class="card">
-                    <img src="placeholder.jpg" alt="Miniatura 1">
-                </div>
-                <div class="card">
-                    <img src="placeholder.jpg" alt="Miniatura 2">
-                </div>
-                </div>
+    <div class="divider"></div>
+
+    <section class="motivations-section">
+        <h2>Mais motivos para assinar</h2>
+        <div class="motivations-grid">
+            <div class="motivation-card">
+                <h3>Aproveite na TV</h3>
+                <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros.</p>
+                <div class="card-icon tv"></div>
+            </div>
+            <div class="motivation-card">
+                <h3>Baixe séries para assistir offline</h3>
+                <p>Baixe seus títulos favoritos e sempre tenha algo para assistir.</p>
+                <div class="card-icon download"></div>
+            </div>
+            <div class="motivation-card">
+                <h3>Assista onde quiser</h3>
+                <p>Assista no celular, tablet, laptop e TV.</p>
+                <div class="card-icon device"></div>
+            </div>
+            <div class="motivation-card">
+                <h3>Crie perfis para crianças</h3>
+                <p>Deixe a criançada se divertir com as histórias favoritas dos personagens.</p>
+                <div class="card-icon kids"></div>
+            </div>
         </div>
+    </section>
 
-        <div class="row">
-            <h2>Continuar Assistindo</h2>
-            <div class="card-list">
-                </div>
+    <div class="divider"></div>
+
+    <section class="faq-section">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq-list">
+            <div class="faq-item">O que é a Netflix? <span class="plus">+</span></div>
+            <div class="faq-item">Quanto custa a Netflix? <span class="plus">+</span></div>
+            <div class="faq-item">Onde posso assistir? <span class="plus">+</span></div>
+            <div class="faq-item">Como faço para cancelar? <span class="plus">+</span></div>
+            <div class="faq-item">O que eu posso assistir na Netflix? <span class="plus">+</span></div>
+            <div class="faq-item">A Netflix é adequada para crianças? <span class="plus">+</span></div>
         </div>
+        
+        <p class="cta-bottom-text">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        <form class="email-form bottom-form">
+            <input type="email" placeholder="Email" required>
+            <button type="submit" class="btn btn-cta">
+                Vamos lá <i class="arrow-right"></i>
+            </button>
+        </form>
+    </section>
 
-        </main>
+    <div class="divider"></div>
 
-    <footer>
-        <p>Desenvolvido por Netflix</p>
+    <footer class="footer">
+        <p>Dúvidas? Ligue para <a href="#">0800 470289 22 </a></p>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Perguntas frequentes</a></li>
+                <li><a href="#">Relações com investidores</a></li>
+                <li><a href="#">Formas de assistir</a></li>
+                <li><a href="#">Informações corporativas</a></li>
+                <li><a href="#">Só na Netflix</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Carreiras</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Entre em contato</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Conta</a></li>
+                <li><a href="#">Resgatar cartões pré-pagos</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Teste de velocidade</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Comprar cartões pré-pagos</a></li>
+                <li><a href="#">Preferências de cookies</a></li>
+                <li><a href="#">Avisos legais</a></li>
+            </ul>
+        </div>
+        
+        
+        <p class="netflix-brasil">Netflix Brasil</p>
     </footer>
+</main>
 </body>
 </html>
