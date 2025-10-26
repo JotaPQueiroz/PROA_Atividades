@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio39</title>
+</head>
+
+<body>
+    <h1>39) Crie um programa que leia o nome e a idade de 5 pessoas e exiba a média das idades.</h1>
+    <script>
+
+        function exercicio39() {
+            let somaIdades = 0;
+            let resultado = " Leitura de 5 pessoas:\n";
+
+            for (let contador = 0; contador < 5; contador++) {
+                let nome = prompt(` Digite o nome da ${contador + 1}ª pessoa:`);
+                if (nome === null) { alert("Operação cancelada."); return; }
+
+                let inputIdade = prompt(` Digite a idade de ${nome}:`);
+                let idade = parseInt(inputIdade);
+
+                if (!isNaN(idade) && idade >= 0 && inputIdade !== null) {
+                    somaIdades += idade;
+                    resultado += `Lido: ${nome}, Idade: ${idade}. Soma parcial: ${somaIdades}.\n`;
+                } else {
+                    alert("Idade inválida. Recomece a leitura."); return;
+                }
+            }
+
+            let media = somaIdades / 5;
+            alert(resultado + `\n A média das idades é ${media.toFixed(2)}.`);
+        }
+
+        exercicio39();
+
+    </script>
+
+</body>
+
+</html>

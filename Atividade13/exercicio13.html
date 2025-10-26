@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio13</title>
+</head>
+
+<body>
+    <h1>13)Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "while".</h1>
+    <script>
+
+        function exercicio13() {
+            let input = prompt(" Digite um número inteiro:");
+            let numeroStr = input;
+
+            if (numeroStr === null || isNaN(parseInt(numeroStr))) { alert("Entrada inválida."); return; }
+
+            let i = numeroStr.length - 1;
+            let resultado = `Dígitos de ${numeroStr} separados:\n`;
+
+            while (i >= 0) {
+                let digito = numeroStr.charAt(i);
+                resultado += `Lendo o dígito: ${digito}.\n`;
+                i--;
+            }
+            alert(resultado);
+        }
+
+        exercicio13();
+
+    </script>
+
+</body>
+
+</html>

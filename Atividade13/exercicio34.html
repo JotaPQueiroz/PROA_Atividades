@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio34</title>
+</head>
+
+<body>
+    <h1>34) Faça um programa que leia 5 números inteiros e exiba a média aritmética dos valores lidos.</h1>
+    <script>
+
+        function exercicio34() {
+            let soma = 0;
+            let resultadoProcesso = " Leitura de 5 números:\n";
+            for (let contador = 0; contador < 5; contador++) {
+                let input = prompt(` Digite o ${contador + 1}º número inteiro:`);
+                let numero = parseInt(input);
+
+                if (!isNaN(numero) && input !== null) {
+                    soma += numero;
+                    resultadoProcesso += `Lido: ${numero}. Soma parcial: ${soma}.\n`;
+                } else if (input === null) {
+                    alert("Operação cancelada."); return;
+                } else {
+                    alert("Entrada inválida. Recomece a leitura."); return;
+                }
+            }
+            let media = soma / 5;
+            alert(resultadoProcesso + `\n A média aritmética é ${media}.`);
+        }
+
+        exercicio34();
+
+    </script>
+
+</body>
+
+</html>

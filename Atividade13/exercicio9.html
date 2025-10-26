@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio9</title>
+</head>
+
+<body>
+    <h1>9) Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "while" e exiba a média das idades.
+    </h1>
+    <script>
+
+        function exercicio9() {
+            let contador = 0;
+            let somaIdades = 0;
+            let resultado = "Leitura de 5 pessoas:\n";
+
+            while (contador < 5) {
+                let nome = prompt(`Digite o nome da ${contador + 1}ª pessoa:`);
+                if (nome === null) { alert("Operação cancelada."); return; }
+
+                let inputIdade = prompt(`Digite a idade de ${nome}:`);
+                let idade = parseInt(inputIdade);
+
+                if (!isNaN(idade) && idade >= 0 && inputIdade !== null) {
+                    somaIdades += idade;
+                    resultado += `Nome: ${nome}, Idade: ${idade}. Soma parcial: ${somaIdades}.\n`;
+                    contador++;
+                } else {
+                    alert("Idade inválida. Tente novamente.");
+                }
+            }
+
+            let media = somaIdades / 5;
+            alert(resultado + `\nA média das idades é: ${media.toFixed(2)}.`);
+        }
+
+        exercicio9();
+
+    </script>
+
+</body>
+
+</html>

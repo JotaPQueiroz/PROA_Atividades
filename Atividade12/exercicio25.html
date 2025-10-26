@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio25</title>
+</head>
+<h1>25 Escreva um programa que leia uma sequência de números do usuário e realize e a soma desses números. Encerre a
+    execução quando um número negativo for digitado.</h1>
+
+<body>
+
+    <script>
+
+        function somarSequenciaAteNegativo() {
+            let soma = 0;
+            let numero;
+
+
+
+
+            while (true) {
+                const entrada = prompt("Digite um número para fazer a soma (CALCULADORA SÓ PARA QUANDO INSERIR UM NEGATIVO):");
+                numero = Number(entrada);
+
+                if (isNaN(numero) || entrada === null) {
+                    alert("Entrada inválida. Tente novamente.");
+                    continue;
+                }
+
+
+                if (numero < 0) {
+                    break;
+                }
+
+                soma += numero;
+                console.log(`+ ${numero}. Soma atual: ${soma}`);
+            }
+
+            const resultado = `A soma total dos números positivos digitados é: ${soma}`;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+        somarSequenciaAteNegativo();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio24</title>
+</head>
+
+<body>
+    <h1>24) Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "do-while" e exiba a média das idades.
+    </h1>
+    <script>
+
+        function exercicio24() {
+            let contador = 0;
+            let somaIdades = 0;
+            let resultado = " Leitura de 5 pessoas:\n";
+
+            do {
+                let nome = prompt(` Digite o nome da ${contador + 1}ª pessoa:`);
+                if (nome === null) { alert("Operação cancelada."); return; }
+
+                let inputIdade = prompt(` Digite a idade de ${nome}:`);
+                let idade = parseInt(inputIdade);
+
+                if (!isNaN(idade) && idade >= 0 && inputIdade !== null) {
+                    somaIdades += idade;
+                    resultado += `Lido: ${nome}, Idade: ${idade}. Soma parcial: ${somaIdades}.\n`;
+                    contador++;
+                } else {
+                    alert("Idade inválida. Tente novamente.");
+                }
+            } while (contador < 5);
+
+            let media = somaIdades / 5;
+            alert(resultado + `\nA média das idades é ${media.toFixed(2)}.`);
+        }
+
+        exercicio24();
+
+    </script>
+
+</body>
+
+</html>

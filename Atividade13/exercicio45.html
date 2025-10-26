@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio45</title>
+</head>
+
+<body>
+    <h1>45) Crie um programa que leia o nome e a idade de várias pessoas até que o nome "fim" seja informado. Ao final,
+        exiba a média das idades.</h1>
+    <script>
+
+        function exercicio45() {
+            let nome = "";
+            let somaIdades = 0;
+            let contadorPessoas = 0;
+            let resultado = " Média de idades até 'fim':\n";
+
+            do {
+                nome = prompt(" Digite o nome (ou 'fim' para encerrar):");
+                if (nome === null) { alert("Operação cancelada."); return; }
+                if (nome.toLowerCase() === "fim") { break; }
+
+                let inputIdade = prompt(` Digite a idade de ${nome}:`);
+                let idade = parseInt(inputIdade);
+
+                if (!isNaN(idade) && idade >= 0 && inputIdade !== null) {
+                    somaIdades += idade;
+                    contadorPessoas++;
+                    resultado += `Lido: ${nome}, Idade: ${idade}. Soma parcial: ${somaIdades}.\n`;
+                } else {
+                    alert("Idade inválida. Tente novamente.");
+                }
+            } while (true);
+
+            let media = contadorPessoas > 0 ? somaIdades / contadorPessoas : 0;
+            alert(resultado + `\nTotal de pessoas lidas: ${contadorPessoas}.\nA média das idades é ${media.toFixed(2)}.`);
+        }
+        exercicio45();
+
+    </script>
+
+</body>
+
+</html>

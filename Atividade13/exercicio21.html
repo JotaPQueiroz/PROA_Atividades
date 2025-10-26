@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio21</title>
+</head>
+
+<body>
+    <h1>21) Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop
+        "do-while".</h1>
+    <script>
+
+        function exercicio21() {
+            let input = prompt(" Digite um número inteiro POSITIVO:");
+            let numero = parseInt(input);
+
+            if (isNaN(numero) || numero <= 0 || input === null) { alert("Entrada inválida."); return; }
+
+            let i = 1;
+            let divisores = [];
+            let resultado = ` Divisores de ${numero}:\n`;
+            do {
+                if (numero % i === 0) {
+                    divisores.push(i);
+                    resultado += `${i} é um divisor.\n`;
+                } else {
+                    resultado += `${i} não é divisor.\n`;
+                }
+                i++;
+            } while (i <= numero);
+            alert(resultado + "\n" + divisores.join(", "));
+        }
+
+        exercicio21();
+
+    </script>
+
+</body>
+
+</html>

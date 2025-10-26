@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio43</title>
+</head>
+
+<body>
+    <h1>43) Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente.</h1>
+    <script>
+
+        function exercicio43() {
+            let input = prompt("Digite um número inteiro:");
+            let numeroStr = input;
+
+            if (numeroStr === null || isNaN(parseInt(numeroStr))) { alert("Entrada inválida."); return; }
+
+            let resultado = `Numero:${numeroStr} \n`;
+
+
+            for (let i = 0; i < numeroStr.length; i++) {
+                let digito = numeroStr.charAt(i);
+                resultado += `Digitos separados: ${digito}.\n`;
+            }
+            alert(resultado);
+        }
+
+        exercicio43();
+
+    </script>
+
+</body>
+
+</html>

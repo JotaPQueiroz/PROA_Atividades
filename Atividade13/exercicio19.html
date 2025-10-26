@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio19</title>
+</head>
+
+<body>
+    <h1>19) Faça um programa que leia 5 números inteiros usando o loop "do-while" e exiba a média aritmética dos valores
+        lidos.</h1>
+    <script>
+
+        function exercicio19() {
+            let contador = 0;
+            let soma = 0;
+            let resultadoProcesso = " Leitura de 5 números:\n";
+            do {
+                let input = prompt(` Digite o ${contador + 1}º número inteiro:`);
+                let numero = parseInt(input);
+
+                if (!isNaN(numero) && input !== null) {
+                    soma += numero;
+                    resultadoProcesso += `Lido: ${numero}. Soma parcial: ${soma}.\n`;
+                    contador++;
+                } else if (input === null) {
+                    alert("Operação cancelada."); return;
+                } else {
+                    alert("Entrada inválida. Tente novamente.");
+                }
+            } while (contador < 5);
+            let media = soma / 5;
+            alert(resultadoProcesso + `\nA média aritmética é ${media}.`);
+        }
+
+        exercicio19();
+
+    </script>
+
+</body>
+
+</html>

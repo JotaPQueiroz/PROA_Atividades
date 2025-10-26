@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio25</title>
+</head>
+
+<body>
+    <h1>25) Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "do-while".</h1>
+    <script>
+
+        function exercicio25() {
+            let contador = 0;
+            let a = 0;
+            let b = 1;
+            let fibonacci = [];
+            let resultado = " Primeiros 20 números de Fibonacci:\n";
+
+            do {
+                fibonacci.push(a);
+                resultado += `[${contador + 1}º] Adicionando: ${a}.\n`;
+                let proximo = a + b;
+                a = b;
+                b = proximo;
+                contador++;
+            } while (contador < 20);
+            alert(resultado + "\n" + fibonacci.join(", "));
+        }
+
+        exercicio25();
+
+    </script>
+
+</body>
+
+</html>

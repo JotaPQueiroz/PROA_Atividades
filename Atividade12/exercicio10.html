@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio10</title>
+</head>
+<body>
+    <h1>10- Informar um saldo e mostrar na tela o saldo com reajuste de 1.5%.</h1>
+    <script>
+
+        function reajustarSaldo() {
+    const saldo = Number(prompt("Digite o saldo atual:"));
+
+    if (isNaN(saldo) || saldo < 0) {
+        alert("Saldo inválido.");
+        return;
+    }
+
+    const taxaReajuste = 0.015; 
+   
+    const saldoReajustado = saldo * (1 + taxaReajuste);
+
+    const resultado = `
+        Saldo Original: R$ ${saldo.toFixed(2)}
+        Reajuste (1.5%): R$ ${(saldoReajustado - saldo).toFixed(2)}
+        Saldo com Reajuste: R$ ${saldoReajustado.toFixed(2)}
+    `;
+
+    console.log(resultado);
+    alert(resultado);
+}
+
+ reajustarSaldo();
+
+    </script>
+    
+</body>
+</html>

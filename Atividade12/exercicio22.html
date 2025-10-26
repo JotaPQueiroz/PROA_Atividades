@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio22</title>
+</head>
+
+<body>
+    <h1>22- Faça um programa que leia 20 números e, ao final, escreva quantos estão entre 0 e 100.</h1>
+    <script>
+
+        function contarEntreZeroECem() {
+            let contagem = 0;
+            const NUMERO_ITERACOES = 20;
+
+            for (let i = 1; i <= NUMERO_ITERACOES; i++) {
+                const numero = Number(prompt(`Digite o ${i}º número (de ${NUMERO_ITERACOES}):`));
+
+                if (isNaN(numero)) {
+                    alert("Entrada inválida. Por favor, reinicie.");
+                    return;
+                }
+
+                if (numero >= 0 && numero <= 100) {
+                    contagem++;
+                }
+            }
+
+            const resultado = `Entre os ${NUMERO_ITERACOES} números digitados, ${contagem} estão entre 0 e 100.`;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        contarEntreZeroECem();
+
+    </script>
+
+</body>
+
+</html>

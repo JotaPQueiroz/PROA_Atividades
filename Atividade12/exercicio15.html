@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio15</title>
+</head>
+
+<body>
+    <h1>15- Escreva um programa que leia a idade de 20 pessoas e exiba a soma das idades.</h1>
+    <script>
+
+        function somarIdadesVintePessoas() {
+            let somaIdades = 0;
+            const NUMERO_PESSOAS = 20;
+
+            for (let i = 1; i <= NUMERO_PESSOAS; i++) {
+                const idade = Number(prompt(`Digite a idade da ${i}ª pessoa (de ${NUMERO_PESSOAS}):`));
+
+                if (isNaN(idade) || !Number.isInteger(idade) || idade < 0) {
+                    alert("Idade inválida. Por favor, reinicie e digite idades válidas.");
+                    return;
+                }
+                somaIdades += idade;
+            }
+
+            const resultado = `A soma das idades das ${NUMERO_PESSOAS} pessoas é: ${somaIdades}`;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        somarIdadesVintePessoas();
+
+    </script>
+
+</body>
+
+</html>

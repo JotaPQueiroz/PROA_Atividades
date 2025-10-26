@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio42</title>
+</head>
+
+<body>
+    <h1>42) Crie um programa que exiba os números ímpares de 50 a 1.</h1>
+    <script>
+
+        function exercicio42() {
+            let impares = [];
+            let resultado = "Números Ímpares de 50 a 1:\n";
+
+
+
+            for (let i = 49; i >= 1; i -= 2) {
+                impares.push(i);
+                resultado += `Encontrado o ímpar: ${i}.\n`;
+            }
+            alert(resultado + "\n " + impares.join(", "));
+        }
+
+        exercicio42();
+
+    </script>
+
+</body>
+
+</html>

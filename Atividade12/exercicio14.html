@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio14</title>
+</head>
+<body>
+    <h1>14- Escreva um programa que leia 10 números do usuário e calcule a soma desses números.</h1>
+    <script>
+
+        function somarDezNumeros() {
+    let soma = 0;
+    
+    for (let i = 1; i <= 10; i++) {
+        const numero = Number(prompt(`Digite o ${i}º número (de 10):`));
+
+        if (isNaN(numero)) {
+            alert("Entrada inválida. Reiniciando o programa.");
+            return somarDezNumeros();
+        }
+        soma += numero;
+    }
+
+    const resultado = `A soma dos 10 números digitados é: ${soma}`;
+
+    console.log(resultado);
+    alert(resultado);
+}
+
+somarDezNumeros();
+
+    </script>
+    
+</body>
+</html>

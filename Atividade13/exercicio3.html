@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio3</title>
+</head>
+
+<body>
+    <h1>3) Crie um programa que exiba os números pares de 1 a 50 usando o loop "while".</h1>
+    <script>
+
+        function exercicio3() {
+            let i = 2;
+            let pares = [];
+            let resultado = "Números Pares de 1 a 50:\n";
+            while (i <= 50) {
+                pares.push(i);
+                resultado += `Encontrado o par: ${i}.\n`;
+                i += 2;
+            }
+            alert(resultado + "\nResultado Final: " + pares.join(", "));
+        }
+
+        exercicio3();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio13</title>
+</head>
+
+<body>
+    <h1>13- Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de conversão
+        é: F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+    </h1>
+    <script>
+
+        function celsiusParaFahrenheit() {
+            const celsius = Number(prompt("Digite a temperatura em graus Celsius (C):"));
+
+            if (isNaN(celsius)) {
+                alert("Temperatura inválida.");
+                return;
+            }
+
+            const fahrenheit = (9 * celsius + 160) / 5;
+
+            const resultado = `
+        Temperatura em Celsius: ${celsius.toFixed(2)}°C
+        Temperatura em Fahrenheit: ${fahrenheit.toFixed(2)}°F
+    `;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        celsiusParaFahrenheit();
+
+    </script>
+
+</body>
+
+</html>

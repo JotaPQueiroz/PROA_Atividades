@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici37o</title>
+</head>
+<body>
+    <h1>37) Faça um programa que leia um número inteiro e exiba se ele é um número primo.</h1>
+    <script>
+
+        function exercicio37() {
+    let input = prompt(" Digite um número inteiro para verificar se é primo:");
+    let numero = parseInt(input);
+
+    if (isNaN(numero) || numero <= 1 || input === null) { alert("Entrada inválida ou não primo."); return; }
+
+    let ehPrimo = true;
+    let resultado = ` Verificando se ${numero} é primo:\n`;
+
+    for (let i = 2; i <= Math.sqrt(numero); i++) {
+        resultado += `Testando divisão por ${i}.\n`;
+        if (numero % i === 0) {
+            ehPrimo = false;
+            resultado += `${numero} é divisível por ${i}. NÃO É PRIMO.\n`;
+            break;
+        }
+    }
+
+    let status = ehPrimo ? "É um número primo." : "NÃO é um número primo.";
+    alert(resultado + "\n" + status);
+}
+
+ exercicio37();
+
+    </script>
+    
+</body>
+</html>

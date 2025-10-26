@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio9</title>
+</head>
+
+<body>
+    <h1>9- Crie um programa que leia o valor do salário mínimo e o valor do salário de um usuário, calcule a quantidade
+        de salários mínimos esse usuário ganha e imprima o resultado. (Salário mínimo = R$1.212,00).</h1>
+    <script>
+
+        function calcularSalariosMinimos() {
+            const SALARIO_MINIMO = 1212.00;
+            const salarioUsuario = Number(prompt("Digite o valor do seu salário:"));
+
+            if (isNaN(salarioUsuario) || salarioUsuario < 0) {
+                alert("Salário inválido.");
+                return;
+            }
+
+            const quantidadeSalarios = salarioUsuario / SALARIO_MINIMO;
+
+            const resultado = `
+        Salário do Usuário: R$ ${salarioUsuario.toFixed(2)}
+        Salário Mínimo (Referência): R$ ${SALARIO_MINIMO.toFixed(2)}
+        O usuário ganha: ${quantidadeSalarios.toFixed(2)} salários mínimos.
+    `;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        calcularSalariosMinimos();
+
+    </script>
+
+</body>
+
+</html>

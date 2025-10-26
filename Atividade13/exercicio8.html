@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio8</title>
+</head>
+
+<body>
+    <h1>8) Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o
+        loop "while".</h1>
+    <script>
+
+        function exercicio8() {
+            let input = prompt(" Digite o número limite para a sequência de Fibonacci:");
+            let limite = parseInt(input);
+
+            if (isNaN(limite) || limite < 1 || input === null) { alert("Entrada inválida."); return; }
+
+            let a = 0;
+            let b = 1;
+            let fibonacci = [];
+            let resultado = `Fibonacci até ${limite}:\n`;
+
+            while (a <= limite) {
+                fibonacci.push(a);
+                resultado += `Adicionando: ${a}.\n`;
+                let proximo = a + b;
+                a = b;
+                b = proximo;
+            }
+
+            alert(resultado + "\n" + fibonacci.join(", "));
+        }
+
+        exercicio8();
+
+    </script>
+
+</body>
+
+</html>

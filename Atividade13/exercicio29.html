@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio29</title>
+</head>
+
+<body>
+    <h1>29) Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário usando o loop
+        "do-while".</h1>
+    <script>
+
+        function exercicio29() {
+            let input = prompt(" Digite um número inteiro para calcular o fatorial:");
+            let numero = parseInt(input);
+
+            if (isNaN(numero) || numero < 0 || input === null) { alert("Entrada inválida."); return; }
+            if (numero === 0) { alert("Resultado Final: Fatorial de 0 é 1."); return; }
+
+            let i = 1;
+            let fatorial = 1;
+            let resultado = ` Fatorial de ${numero}:\n`;
+
+            do {
+                fatorial *= i;
+                resultado += `Multiplicando por ${i}. Fatorial parcial: ${fatorial}.\n`;
+                i++;
+            } while (i <= numero);
+
+            alert(resultado + `\nO fatorial de ${numero} é ${fatorial}.`);
+        }
+
+        exercicio29();
+
+    </script>
+
+</body>
+
+</html>

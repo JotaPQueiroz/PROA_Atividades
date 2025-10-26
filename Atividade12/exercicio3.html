@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio3</title>
+</head>
+
+<body>
+    <h1>3- A CEF concederá um crédito especial com juros de 2% aos seus clientes de acordo com o saldo médio no último
+        ano. Fazer um programa em JAVA que leia o saldo médio de um cliente e calcule o valor do crédito de acordo com a
+        tabela a seguir. Imprimir uma mensagem informando o saldo médio e o valor de crédito.</h1>
+    <script>
+
+        function calcularCreditoCEF_NovaTabela() {
+            const saldoMedioStr = prompt("Digite o saldo médio do cliente: (Ex: 1500.00)");
+            const saldoMedio = Number(saldoMedioStr);
+
+            if (isNaN(saldoMedio) || saldoMedio < 0) {
+                alert("Saldo inválido. Por favor, digite um valor numérico não negativo.");
+                return;
+            }
+
+            let percentualCredito = 0;
+
+            
+            if (saldoMedio <= 500) {
+                percentualCredito = 0.00; 
+            } else if (saldoMedio <= 1000) {
+                percentualCredito = 0.30; 
+            } else if (saldoMedio <= 3000) {
+                percentualCredito = 0.40; 
+            } else { 
+                percentualCredito = 0.50; 
+            }
+
+            const valorCredito = saldoMedio * percentualCredito;
+
+            let mensagem;
+            if (valorCredito > 0) {
+                mensagem = `
+            === Cálculo de Crédito CEF ===
+            Saldo Médio: R$ ${saldoMedio.toFixed(2)}
+            Percentual Aplicado: ${(percentualCredito * 100).toFixed(0)}%
+            Valor do Crédito Especial: R$ ${valorCredito.toFixed(2)}
+            (Este valor é concedido com 2% de juros.)
+        `;
+            } else {
+                mensagem = `
+             Cálculo de Crédito CEF 
+            Saldo Médio: R$ ${saldoMedio.toFixed(2)}
+            Nenhum crédito concedido (Saldo Médio <= R$ 500).
+        `;
+            }
+
+            console.log(mensagem);
+            alert(mensagem);
+        }
+
+       
+        calcularCreditoCEF_NovaTabela();
+
+    </script>
+
+</body>
+
+</html>

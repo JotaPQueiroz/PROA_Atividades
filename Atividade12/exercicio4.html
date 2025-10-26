@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio4</title>
+</head>
+
+<body>
+    <h1>4- Dados três valores A, B e C, construa um programa em Javascript, que mostre na tela os valores de forma
+        descendente (do maior para o menor).</h1>
+    <script>
+
+        function ordenarValoresDescendente() {
+            const a = Number(prompt("Digite o valor de A:"));
+            const b = Number(prompt("Digite o valor de B:"));
+            const c = Number(prompt("Digite o valor de C:"));
+
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                alert("Entrada inválida. Digite apenas números.");
+                return;
+            }
+
+
+            const valores = [a, b, c];
+
+            valores.sort((val1, val2) => val2 - val1);
+
+            const resultado = `Valores em ordem descendente: ${valores.join(", ")}`;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        ordenarValoresDescendente();
+
+    </script>
+
+</body>
+
+</html>

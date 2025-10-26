@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio36</title>
+</head>
+
+<body>
+    <h1>36) Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número.</h1>
+    <script>
+
+        function exercicio36() {
+            let input = prompt(" Digite um número inteiro POSITIVO:");
+            let numero = parseInt(input);
+
+            if (isNaN(numero) || numero <= 0 || input === null) { alert("Entrada inválida."); return; }
+
+            let divisores = [];
+            let resultado = ` Divisores de ${numero}:\n`;
+            for (let i = 1; i <= numero; i++) {
+                if (numero % i === 0) {
+                    divisores.push(i);
+                    resultado += `${i} é um divisor.\n`;
+                } else {
+                    resultado += `${i} não é divisor.\n`;
+                }
+            }
+            alert(resultado + "\n" + divisores.join(", "));
+        }
+
+        exercicio36();
+
+    </script>
+
+</body>
+
+</html>

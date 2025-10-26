@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio5</title>
+</head>
+
+<body>
+    <h1>5- Crie um programa em javascript que leia a idade de uma pessoa e informe a sua classe eleitoral: · não eleitor
+        (abaixo de 16 anos); · eleitor obrigatório (entre a faixa de 18 e menor de 65 anos); · eleitor facultativo (de
+        16 até 18 anos e maior de 65 anos, inclusive).
+    </h1>
+    <script>
+
+        function informarClasseEleitoral() {
+            const idadeStr = prompt("Digite a idade da pessoa:");
+            const idade = Number(idadeStr);
+
+            if (isNaN(idade) || !Number.isInteger(idade) || idade < 0) {
+                alert("Idade inválida. Por favor, digite um número inteiro não negativo.");
+                return;
+            }
+
+            let classeEleitoral;
+
+            if (idade < 16) {
+                classeEleitoral = "Não Eleitor (abaixo de 16 anos)";
+            } else if (idade >= 18 && idade < 65) {
+                classeEleitoral = "Eleitor Obrigatório (entre 18 e menor de 65 anos)";
+            } else { // 16, 17 ou 65+
+                classeEleitoral = "Eleitor Facultativo (de 16 a 18 anos ou maior de 65 anos)";
+            }
+
+            const resultado = `Para a idade de ${idade} anos, a classe eleitoral é: ${classeEleitoral}.`;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        informarClasseEleitoral();
+
+    </script>
+
+</body>
+
+</html>

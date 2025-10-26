@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio41</title>
+</head>
+
+<body>
+    <h1>41) Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número
+        lido.</h1>
+    <script>
+
+        function exercicio41() {
+            let input = prompt(" Digite o número limite (N):");
+            let N = parseInt(input);
+
+            if (isNaN(N) || N < 1 || input === null) { alert("Entrada inválida."); return; }
+
+            let soma = 0;
+            let resultado = `Soma dos pares até ${N}:\n`;
+
+            for (let i = 2; i <= N; i += 2) {
+                soma += i;
+                resultado += `Somando o par ${i}. Soma parcial: ${soma}.\n`;
+            }
+            alert(resultado + `\n A soma de todos os pares até ${N} é ${soma}.`);
+        }
+
+        exercicio41();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio18</title>
+</head>
+
+<body>
+    <h1>18- Escreva um programa que leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova.</h1>
+    <script>
+
+        function encontrarPessoaMaisNova() {
+            let idadeMaisNova = Infinity;
+            let nomeMaisNova = "";
+            const NUMERO_PESSOAS = 10;
+
+            for (let i = 1; i <= NUMERO_PESSOAS; i++) {
+                const nome = prompt(`Digite o nome da ${i}ª pessoa (de ${NUMERO_PESSOAS}):`);
+                const idade = Number(prompt(`Digite a idade de ${nome}:`));
+
+                if (isNaN(idade) || !Number.isInteger(idade) || idade < 0) {
+                    alert("Idade inválida. Por favor, reinicie e digite idades válidas.");
+                    return;
+                }
+
+
+                if (idade < idadeMaisNova) {
+                    idadeMaisNova = idade;
+                    nomeMaisNova = nome;
+                }
+            }
+
+            const resultado = `
+        Entre as ${NUMERO_PESSOAS} pessoas, a mais nova é: ${nomeMaisNova}
+        Idade: ${idadeMaisNova} anos
+    `;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        encontrarPessoaMaisNova();
+
+    </script>
+
+</body>
+
+</html>

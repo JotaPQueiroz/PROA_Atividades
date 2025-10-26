@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio20</title>
+</head>
+
+<body>
+    <h1>20- Escreva um programa que leia 20 números do usuário e exiba quantos números são maiores do que 8.</h1>
+    <script>
+
+        function contarMaioresQueOito() {
+            let contagem = 0;
+            const NUMERO_ITERACOES = 20;
+
+            for (let i = 1; i <= NUMERO_ITERACOES; i++) {
+                const numero = Number(prompt(`Digite o ${i}º número (de ${NUMERO_ITERACOES}):`));
+
+                if (isNaN(numero)) {
+                    alert("Entrada inválida. Por favor, reinicie.");
+                    return;
+                }
+
+                if (numero > 8) {
+                    contagem++;
+                }
+            }
+
+            const resultado = `Entre os ${NUMERO_ITERACOES} números digitados, ${contagem} são maiores que 8.`;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        contarMaioresQueOito();
+
+    </script>
+
+</body>
+
+</html>

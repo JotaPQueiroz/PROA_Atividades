@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio7</title>
+</head>
+
+<body>
+    <h1>7) Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "while".</h1>
+    <script>
+
+        function exercicio7() {
+            let input = prompt("Digite um número inteiro para verificar se é primo:");
+            let numero = parseInt(input);
+
+            if (isNaN(numero) || numero <= 1 || input === null) { alert("Entrada inválida ou não primo."); return; }
+
+            let i = 2;
+            let ehPrimo = true;
+            let resultado = `${numero} \n`;
+
+            while (i <= Math.sqrt(numero)) {
+                resultado += `Testando divisão por ${i}.\n`;
+                if (numero % i === 0) {
+                    ehPrimo = false;
+                    resultado += `${numero} é divisível por ${i}. NÃO É PRIMO.\n`;
+                    break;
+                }
+                i++;
+            }
+
+            let status = ehPrimo ? "É um número primo." : "NÃO é um número primo.";
+            alert(resultado + "\n" + status);
+        }
+
+        exercicio7();
+
+    </script>
+
+</body>
+
+</html>

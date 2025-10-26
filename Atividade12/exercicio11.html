@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio11</title>
+</head>
+
+<body>
+    <h1>11- Escrever um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por
+        ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar
+        o seu nome, o salário fixo e salário no final do mês.</h1>
+    <script>
+
+        function calcularSalarioFinalVendedor() {
+            const nome = prompt("Digite o nome do vendedor:");
+            const salarioFixo = Number(prompt("Digite o salário fixo do vendedor:"));
+            const totalVendas = Number(prompt("Digite o total de vendas (em dinheiro) do mês:"));
+
+            if (isNaN(salarioFixo) || isNaN(totalVendas) || salarioFixo < 0 || totalVendas < 0) {
+                alert("Valores monetários inválidos.");
+                return;
+            }
+
+            const comissao = totalVendas * 0.15;
+            const salarioFinal = salarioFixo + comissao;
+
+            const resultado = `
+        Folha de Pagamento 
+        Nome do Vendedor: ${nome}
+        Salário Fixo: R$ ${salarioFixo.toFixed(2)}
+        Comissão (15% sobre R$ ${totalVendas.toFixed(2)}): R$ ${comissao.toFixed(2)}
+        Salário Final do Mês: R$ ${salarioFinal.toFixed(2)}
+    `;
+
+            console.log(resultado);
+            alert(resultado);
+        }
+
+        calcularSalarioFinalVendedor();
+
+    </script>
+
+</body>
+
+</html>

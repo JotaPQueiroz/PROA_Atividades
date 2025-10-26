@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio35</title>
+</head>
+
+<body>
+    <h1>35) Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor.</h1>
+    <script>
+
+        function exercicio35() {
+            let input = prompt(" Digite o número inteiro para a tabuada:");
+            let numero = parseInt(input);
+
+            if (isNaN(numero) || input === null) { alert("Entrada inválida."); return; }
+
+            let resultado = ` Tabuada do ${numero}:\n`;
+            for (let multiplicador = 1; multiplicador <= 10; multiplicador++) {
+                let produto = numero * multiplicador;
+                resultado += `${numero} x ${multiplicador} = ${produto}\n`;
+            }
+            alert(resultado);
+        }
+
+        exercicio35();
+
+    </script>
+
+</body>
+
+</html>
